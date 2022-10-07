@@ -17,12 +17,21 @@ class NewTransaction extends StatelessWidget {
         padding: EdgeInsets.all(10),
         child: Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
           TextField(
-            decoration: InputDecoration(labelText: 'Title'),
+            style: TextStyle(fontSize: 15),
+            decoration: InputDecoration(
+              labelText: 'Title',
+              labelStyle: TextStyle(fontSize: 15),
+            ),
             controller: titleInput,
           ),
           TextField(
-            decoration: InputDecoration(labelText: 'Amount'),
+            style: TextStyle(fontSize: 15),
+            decoration: InputDecoration(
+              labelText: 'Amount',
+              labelStyle: TextStyle(fontSize: 15),
+            ),
             controller: amountInput,
+            keyboardType: TextInputType.number,
           ),
           SizedBox(height: 10),
           RaisedButton(
